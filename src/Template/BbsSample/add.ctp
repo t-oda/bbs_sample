@@ -17,6 +17,7 @@
             echo $this->Form->control('name');
             echo $this->Form->control('age');
             echo $this->Form->control('address');
+            echo $this->Form->control('comment');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

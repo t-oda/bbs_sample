@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  * @property string $name
  * @property int $age
  * @property string $address
+ * @property string $comment
  */
 class BbsSample extends Entity
 {

@@ -28,6 +28,7 @@ class BbsSampleFixture extends TestFixture
         'name' => ['type' => 'string', 'length' => 20, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'age' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'address' => ['type' => 'string', 'length' => 20, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'comment' => ['type' => 'string', 'length' => 200, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -48,7 +49,8 @@ class BbsSampleFixture extends TestFixture
             'id' => 1,
             'name' => 'Lorem ipsum dolor ',
             'age' => 1,
-            'address' => 'Lorem ipsum dolor '
+            'address' => 'Lorem ipsum dolor ',
+            'comment' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }

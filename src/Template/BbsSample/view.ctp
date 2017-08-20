@@ -25,6 +25,10 @@
             <td><?= h($bbsSample->address) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Comment') ?></th>
+            <td><?= h($bbsSample->comment) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($bbsSample->id) ?></td>
         </tr>

@@ -60,6 +60,10 @@ class BbsSampleTable extends Table
             ->requirePresence('address', 'create')
             ->notEmpty('address');
 
+        $validator
+            ->requirePresence('comment', 'create')
+            ->notEmpty('comment');
+
         return $validator;
     }
 }

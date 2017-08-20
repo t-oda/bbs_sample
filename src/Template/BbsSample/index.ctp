@@ -7,7 +7,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Bbs Sample'), ['action' => 'add']) ?></li>
+        <!--<li></li>-->
     </ul>
 </nav>
 <div class="bbsSample index large-9 medium-8 columns content">
@@ -19,6 +19,7 @@
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('age') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('address') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('comment') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -29,6 +30,7 @@
                 <td><?= h($bbsSample->name) ?></td>
                 <td><?= $this->Number->format($bbsSample->age) ?></td>
                 <td><?= h($bbsSample->address) ?></td>
+                <td><?= h($bbsSample->comment) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $bbsSample->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $bbsSample->id]) ?>
@@ -38,6 +40,9 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+    <div style="width: 180px; height: 30px; margin-left: auto; padding:2px 10px; border: 1px solid #1798A5; border-radius: 5px;">
+        <?= $this->Html->link(__('New Bbs Sample'), ['action' => 'add']) ?>
+    </div>
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('first')) ?>
